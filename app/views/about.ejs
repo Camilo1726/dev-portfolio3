@@ -1,0 +1,39 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/main.ejs') %>
+
+<main class="main-content">
+    <h1>Welcome to <%= title %></h1>
+    
+    <div class="row">
+        <!-- Left column: Introduction and resume button -->
+        <section class="col-6 about-section">
+            <div class="about-intro">
+                <h2>I'm Camilo!</h2>
+                <p>
+                    I'm a <strong>Software Developer - Product Owner</strong>
+                    with a passion for <strong>Software products</strong>.
+                </p>
+                <a href="/resume.pdf" class="resume-button" target="_blank">Open Resume</a>
+            </div>
+        </section>
+
+        <!-- Right column: Image and contact details -->
+        <section class="col-6 profile-section">
+            <img src="/img/profile.jpg" alt="Profile Photo of Camilo" class="profile-image">
+            <ul class="contact-list">
+                <li><strong>Phone</strong> | (437)985-4432</li>
+                <li><strong>Email</strong> | cam1726@hotmail.com</li>
+                <li><strong>LinkedIn</strong> | <a href="https://www.linkedin.com/in/camilo-aguilar1726/">Camilo Aguilar 1726</a></li>
+                <li><strong>GitHub</strong> | <a href="https://github.com/Camilo1726">Camilo1726</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact link at the bottom -->
+        <div class="contact-link">
+            <h3><a href="/contactus">Contact me</a></h3>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/bottom.ejs') %>
+<%- include('partials/footer.ejs') %>

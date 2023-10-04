@@ -1,0 +1,71 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+
+<%- include('partials/main.ejs') %>
+
+<main>
+    <h1>Welcome to <%= title %></h1>
+
+    <div class="content-container">
+        
+        <div class="profile-section">
+            <img class="profilepic" src="/img/logo.png" alt="Camilo's logo">
+        </div>
+        
+        <div class="form-section">
+            <h2>Contact Form</h2>
+            <form action="/submitContactForm" method="post">
+                
+                <!-- Personal Details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    
+                    <div class="input-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </fieldset>
+
+                <!-- Property Details -->
+                
+                <!-- Comments -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div class="input-group">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="submit-button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+</main>
+
+<%- include('partials/bottom.ejs') %>
+<%- include('partials/footer.ejs') %>
+
+</body>

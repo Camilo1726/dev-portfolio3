@@ -1,0 +1,51 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/main.ejs') %>
+
+<h1>Welcome to <%= title%></h1>   
+
+<div class="projects-container">
+
+    <!-- C# Project Card -->
+    <div class="project-card">
+        <img class="project-image" src="/img/C#.png" alt="C# pizza app">
+        <h3>C# development of Pizza order application</h3>
+        <p>
+            Custome delively pizza applcation made in C# More.
+        </p>
+        <button onclick="document.getElementById('pizzaVideo').play();">Watch Video</button>
+        <video id="pizzaVideo" controls style="display:none;">
+            <source src="/pizzavideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="property1.html" target="_blank" class="more-info">More info...</a>
+    </div>
+
+    <!-- Default Software Project 1 -->
+    <div class="project-card">
+        <img class="project-image" src="Images/software1.png" alt="Software Project 1">
+        <h3>Custom CRM System</h3>
+        <p>
+            A custom-built CRM solution tailored for small to medium-sized businesses. Featuring contact management, sales pipelines, and detailed analytics. Built with React and Node.js.
+        </p>
+        <a href="#" class="more-info">Learn More</a>
+    </div>
+
+    <!-- Default Software Project 2 -->
+    <div class="project-card">
+        <img class="project-image" src="Images/software2.png" alt="Software Project 2">
+        <h3>Mobile Finance App</h3>
+        <p>
+            A mobile finance application that helps users track expenses, set budgets, and analyze spending habits. Developed using Flutter and integrated with various banking APIs.
+        </p>
+        <a href="#" class="more-info">Learn More</a>
+    </div>
+
+    <!-- Empty Project Card for Future Projects -->
+    <div class="project-card empty-card">Coming Soon...</div>
+
+</div>
+
+<hr>
+
+<%- include('partials/bottom.ejs') %>
+<%- include('partials/footer.ejs') %>

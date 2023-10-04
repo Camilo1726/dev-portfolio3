@@ -1,0 +1,404 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the whole page */
+body {
+    background-color: #f5f5f5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+/* Style the header and navigation bar */
+header {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Style the intro section */
+.intro-section {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-pic{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+    max-width: 50%;
+    text-align: left;
+    padding: 2rem;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Style the feedback section */
+.feedback-section {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+}
+
+.feedback-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.feedback-author {
+    font-size: 1.2rem;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #34495e;
+    color: #fff;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    list-style-type: none;
+}
+
+.service-list li {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.service-list li:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* -------- Contact Us CSS------------------------------------------- */
+/* Variables for consistent theming */
+
+/* Reset some default styles */
+body, h1, h2, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #3498db;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.profile-section {
+    flex: 1;
+    padding: 1em;
+}
+
+.form-section {
+    flex: 2;
+    padding: 1em;
+}
+
+.profilepic {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group, .submit-button {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+    color: #3498db;
+}
+
+hr {
+    margin-top: 1em;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+/* ----------------Projects --------------- */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 300px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+    .project-image {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+.more-info {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.empty-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #f7f7f7;
+}
+/* About  */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    margin: 0 0 1em;
+    color: #2c3e50;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.about-section {
+    background-color: #3498db;
+    color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.profile-section {
+    padding: 2em;
+    position: relative;
+}
+
+.profile-image {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.contact-list li {
+    margin-bottom: 0.5em;
+}
+
+.contact-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+    background-color: #c0392b;
+}
+
+.contact-link {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.contact-link a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link a:hover {
+    color: #2c3e50;
+}
